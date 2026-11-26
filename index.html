@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maksymilian Majdański</title>
-<meta name="description" content="Maksymilian Majdański – Automatic Control and Robotics student at Poznań University of Technology. Control systems, dynamics, embedded systems.">
+<meta name="description" content="Maksymilian Majdański – Automatic Control and Robotics student at Poznań University of Technology. Legged robots, dynamics, model predictive control, motor drivers.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
 <style>
@@ -61,7 +61,7 @@
     .intro{flex-direction:column-reverse;align-items:center;text-align:center}
     .project{flex-direction:column}
     .project .thumb, .project .thumb img, .project .thumb .none{width:100%;height:auto;aspect-ratio:3/2}
-    table.cv td.when{width:100px}
+    table.cv td.when{width:100px;white-space:normal}
   }
 </style>
 </head>
@@ -70,7 +70,7 @@
   HOW TO EDIT
   • Photo: put a file called "photo.jpg" next to this file (square works best).
   • Projects: copy one <div class="project"> ... </div> block to add another.
-  • Project images go into a folder called "images".
+  • CV: compile CV_Maks_web.tex and upload it as "cv.pdf" next to this file.
 -->
 <div class="page">
 
@@ -79,12 +79,14 @@
     <div class="text">
       <h1>Maksymilian Majdański</h1>
       <div class="affil">Automatic Control and Robotics<br>Poznań University of Technology</div>
-      <p>I am an undergraduate student of Automatic Control and Robotics at Poznań University
-      of Technology. My passion is building robots from scratch and solving complex engineering
-      problems, from the dynamic model and the controller down to the electronics and firmware.</p>
+      <p>I am a final-year student of Automatic Control and Robotics at Poznań University of
+      Technology. I build robots from scratch across the full stack: from the dynamic model and
+      the controller down to the electronics and firmware. During a research internship at
+      ESA Spaceship Poland I built a 70&nbsp;kg cable-driven lunar crane controlled by MPC, and under
+      the name Magility I now design my own hardware for legged robots.</p>
       <div class="links">
         <a href="mailto:maksmajdanski@gmail.com">Email</a><span>/</span>
-        <a href="cv.pdf">CV</a><span>/</span>
+        <a href="cv_overall.pdf">CV</a><span>/</span>
         <a href="https://github.com/maksm17">GitHub</a><span>/</span>
         <a href="https://www.linkedin.com/in/maksymilian-majdanski-64629738b/">LinkedIn</a>
       </div>
@@ -95,21 +97,22 @@
   <!-- ===== INTERESTS ===== -->
   <h2>Interests</h2>
   <ul>
-    <li>Dynamics of robotic systems</li>
-    <li>Agile robots and bipedal locomotion</li>
-    <li>Model-based control</li>
-    <li>Embedded and real-time systems</li>
-    <li>Electronics</li>
+    <li>Dynamics of legged locomotion and agile bipedal robots</li>
+    <li>Model predictive and optimal control</li>
+    <li>State estimation and system identification</li>
+    <li>Actuators, motor control and embedded real-time systems</li>
   </ul>
 
   <!-- ===== EDUCATION ===== -->
   <h2>Education</h2>
   <table class="cv">
     <tr>
-      <td class="when">2023 – present</td>
-      <td><b>B.Eng. in Automatic Control and Robotics</b><br>
+      <td class="when">Oct 2023 – present</td>
+      <td><b>B.Sc. in Automatic Control and Robotics</b><br>
       Poznań University of Technology, Faculty of Control, Robotics and Electrical Engineering
-      <div class="muted small">GPA 4.6/5.0 · Top 4% of the year</div></td>
+      <div class="muted small">GPA 4.6/5.0 · Ranked 8th of 197 in the cohort</div>
+      <div class="muted small">Thesis (supervisor: Dr. Krzysztof Walas): Control System of a Cable-Driven
+      Crane Prototype for Autonomous Cargo Offloading from a Lunar Lander · Expected graduation: Apr 2027</div></td>
     </tr>
   </table>
 
@@ -118,13 +121,18 @@
   <h2>Experience</h2>
   <table class="cv">
     <tr>
-      <td class="when">Feb 2026 – Aug 2026</td>
-      <td><b>Space Robotics Intern</b><br>
+      <td class="when">Aug 2026 – present</td>
+      <td><b>Student Researcher</b> (Bachelor's thesis project)<br>
+      ESA Spaceship Poland</td>
+    </tr>
+    <tr>
+      <td class="when">Feb 2026 – Jul 2026</td>
+      <td><b>Space Robotics Research Intern</b><br>
       ESA Spaceship Poland</td>
     </tr>
     <tr>
       <td class="when">Jul 2024 – Sep 2024</td>
-      <td><b>Engineering Intern</b><br>
+      <td><b>Engineering Intern</b>, Quality Control Lab and Maintenance Department<br>
       AE Group Polska</td>
     </tr>
   </table>
@@ -134,27 +142,33 @@
   <table class="cv">
     <tr>
       <td class="when">Oct 2025 – present</td>
-      <td><b>KN CybAiR</b>, student research club, Poznań University of Technology<br>
-      <span class="muted small">Member of ESRA – European Students Robotics Association</span>
+      <td><b>KN CybAiR</b>, student research group, Poznań University of Technology<br>
+      <span class="muted small">Member of ESRA – European Student Robotics Association</span>
       <ul class="small" style="margin-top:6px">
+        <li>Software lead for manipulator teleoperation: developing from scratch the ROS&nbsp;2
+        teleoperation software for the robotic arm of the team's Mars rover.</li>
       </ul></td>
     </tr>
   </table>
 
   <!-- ===== PROJECTS =====
-       To add a photo: put it in the "images" folder and replace
-       <div class="thumb"><div class="none">image</div></div>
-       with
-       <div class="thumb"><img src="images/crane.jpg" alt=""></div>
+       To add a photo: put it next to this file and use
+       <div class="thumb"><img src="crane.jpg" alt=""></div>
   -->
-  <h2>Best personal projects</h2>
+  <h2>Projects</h2>
 
   <div class="project">
     <div class="thumb"><img src="crane.gif" alt="Cable-driven lunar crane"></div>
     <div>
       <h3>Cable-driven lunar crane</h3>
-      <div class="meta">Feb 2026 – Aug 2026 · Research internship, ESA Spaceship Poland</div>
-      <p>Full-scale cable-driven crane that autonomously unloads cargo from the top of a lunar lander. I designed the mechanical structure, a vision system for cargo position estimation, and a model predictive controller (MPC) based on a dynamic model I derived. The whole system runs in real time on a single-board computer.</p>
+      <div class="meta">Feb 2026 – present · ESA Spaceship Poland, Bachelor's thesis</div>
+      <p>A 70&nbsp;kg cable-driven crane, inspired by NASA's LSMS, that autonomously unloads cargo
+      from the top of a lunar lander. I designed and built the mechanical structure and wrote the
+      whole software stack: the dynamic model, a nonlinear MPC in acados with an EKF running in real
+      time on a Raspberry Pi 5 (ros2_control, 50&nbsp;Hz), a cascaded control structure that reduced the
+      tracking error from 3&nbsp;cm to 0.9&nbsp;cm, a MuJoCo digital twin calibrated on hardware, input
+      shaping of the cable mode, and a vision pipeline (RealSense, YOLO, RANSAC) for autonomous
+      pick-and-place.</p>
       <div class="plinks"><a href="https://github.com/maksm17/cable_driven_lunar_crane">code</a></div>
     </div>
   </div>
@@ -163,19 +177,25 @@
     <div class="thumb"><img src="foc_driver.jpg" alt="FOC motor driver"></div>
     <div>
       <h3>FOC motor driver</h3>
-      <div class="meta">Oct 2026 – present · personal project</div>
-      <p>Custom field-oriented control (FOC) motor driver with a CAN FD interface, designed for the low-cost Eaglepower L8308 motor. I designed the schematic and PCB layout and wrote the firmware, which is currently under testing.</p>
+      <div class="meta">Oct 2026 – present · Magility, personal project</div>
+      <p>A round 24&nbsp;V field-oriented control driver for the Eaglepower LA8308 motor (STM32G431,
+      DRV8323, phase-shunt current sensing, 14-bit magnetic encoder, CAN FD). I designed the schematic
+      and PCB and wrote bare-metal C firmware: FOC at 20&nbsp;kHz with a current loop tuned from motor
+      parameters identified on hardware, PLL speed estimation, an impedance (MIT-style) mode,
+      protections and PC unit tests. Built and tested on hardware.</p>
       <div class="plinks"><a href="https://github.com/maksm17/foc_driver">code</a></div>
     </div>
   </div>
 
   <div class="project">
-    <div class="thumb"><img src="qdd.gif" alt="Qdd"></div>
+    <div class="thumb"><img src="qdd.gif" alt="Quasi-direct-drive actuator"></div>
     <div>
-      <h3>QDD actuator</h3>
-      <div class="meta">Oct 2026 – present · personal project</div>
-      <p>Quasi-direct-drive actuator for full-scale legged robots, combining the Eaglepower L8308 motor, my FOC driver, a planetary gearbox and a CAN FD–USB adapter. A plug-and-play building block for my future legged robot projects.</p>
-      <div class="plinks"><a href="https://cad.onshape.com/documents/3ff38436895990ded9e3f033/w/57bf4bd639b5a547938d9e0f/e/c85906be11374eb8a6e11fed?renderMode=0&uiState=6b02189c642786c6db9211f4">code</a></div>
+      <h3>Quasi-direct-drive actuator</h3>
+      <div class="meta">Oct 2026 – Nov 2026 · Magility, personal project</div>
+      <p>A backdrivable joint module for full-scale legged robots: the LA8308 motor, a 3D-printed
+      nylon 6:1 planetary gearbox, my FOC driver and a CAN FD–USB bridge board, with 16&nbsp;Nm design
+      peak torque at 700&nbsp;g. A plug-and-play building block for my future legged robots.</p>
+      <div class="plinks"><a href="https://cad.onshape.com/documents/3ff38436895990ded9e3f033/w/57bf4bd639b5a547938d9e0f/e/c85906be11374eb8a6e11fed?renderMode=0&uiState=6b02189c642786c6db9211f4">CAD</a></div>
     </div>
   </div>
 
@@ -184,21 +204,22 @@
     <div>
       <h3>Biped – Physical AI Hackathon, Zurich</h3>
       <div class="meta">Oct 2026 · hackathon</div>
-      <p>Bipedal robot built during the Physical AI Hackathon in Zurich, controlled with residual reinforcement learning.</p>
+      <p>A 6-DoF servo-driven biped built from scratch during the hackathon. It walks with a residual
+      PPO policy trained in MuJoCo that corrects a sine gait. To cross the sim-to-real gap I measured
+      the servos' latency, deadband and lag, modelled them in the simulator, and wrote a C++
+      ros2_control driver for the servo buses.</p>
       <div class="plinks"><a href="https://github.com/maksm17/biped">code</a></div>
     </div>
   </div>
 
-  <!-- ===== AWARDS =====
-       Put the photo into the "images" folder as images/award.jpg
-       To add another award, copy one <li> ... </li> line. -->
+  <!-- ===== AWARDS ===== -->
   <h2>Awards &amp; achievements</h2>
   <ul>
-    <li><b>Rector's Scholarship</b> for academic excellence, Poznań University of Technology (every semester, 2023 – present)</li>
-    <li><b>Bronze Medalist</b>, Polish Academic Chess Championships (2025)</li>
+    <li><b>Rector's Scholarship</b> for the best students, Poznań University of Technology (2024 – present)</li>
+    <li><b>Bronze Medal</b>, Polish Academic Chess Championships (2025)</li>
     <li><b>Winner</b>, Polish High School Chess Championships (2023)</li>
-    <li>Award at the <b>International Chess Festival</b> in Ustroń, Poland (2021)</li>
-    <!-- <li><b>place</b>, another competition (year)</li> -->
+    <li>Award at the <b>International Chess Festival</b> in Ustroń, Poland, presented by Garry Kasparov (2021)</li>
+    <li>FIDE rating 2115</li>
   </ul>
   <figure class="award">
     <img src="award.jpg" alt="Receiving the trophy from Garry Kasparov">
@@ -208,11 +229,10 @@
   <!-- ===== SKILLS ===== -->
   <h2>Main skills</h2>
   <table class="cv">
-    <tr><td class="when">Programming</td><td>C, C++, Python, MATLAB</td></tr>
-    <tr><td class="when">Robotics &amp; control</td><td>ROS 2, MuJoCo, Pinocchio, CasADi, acados</td></tr>
-    <tr><td class="when">Hardware</td><td>STM32, KiCad, Onshape</td></tr>
-    <tr><td class="when">Systems</td><td>Real-time Linux, Docker</td></tr>
-    <tr><td class="when">Languages</td><td>Polish (native), English (C1), German (B2)</td></tr>
+    <tr><td class="when">Control &amp; modelling</td><td>MPC (acados, CasADi), system identification, rigid-body dynamics (Pinocchio), MuJoCo, FOC, reinforcement learning (PPO, sim-to-real)</td></tr>
+    <tr><td class="when">Software</td><td>C, C++, Python, MATLAB; ROS&nbsp;2; real-time Linux, Docker</td></tr>
+    <tr><td class="when">Hardware</td><td>STM32, KiCad, Onshape, Raspberry Pi, 3D printing</td></tr>
+    <tr><td class="when">Languages</td><td>Polish (native), English (C1, IELTS Academic 7.0), German (B2)</td></tr>
   </table>
 
   <footer>Last updated: November 2026</footer>
